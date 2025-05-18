@@ -2,10 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Anthony Than's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header>
+    <!-- Container for the image and text -->
+    <div style="position: relative; text-align: center;">
+      <!-- Dark mode button at the top of the hero section -->
+      <button id="darkToggle" style="position: absolute; top: 20px; right: 20px; z-index: 2;">Toggle Dark Mode</button>
+      <!-- Hero image, set a fixed height for a larger look -->
+      <img src="hero-bg.jpg" alt="Anthony Than Hero Image" style="width:100%; height:350px; object-fit:cover; display:block;">
+      <!-- Text over the image -->
+      <h1 style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgba(0,0,0,0.5); /* semi-transparent background for readability */
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 2.5em;
+        width: 90%;
+        max-width: 700px;
+      ">
+        Anthony Than's Portfolio
+      </h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <!-- Laptop image in About Me section -->
+      <img src="laptop.jpg" alt="Open laptop on a desk with a calm and focused atmosphere, background shows a tidy workspace" style="width:200px;">
+      <p>Hello! I'm Anthony Than, an IT major at the University of Cincinnati specializing in Game Development & Simulation + Software Application Development.</p>
+      <p>GPA: 3.80 | Dean’s List | Grad: May 2026</p>
+      <a class="button" href="AnthonyThan_Resume.pdf" download>📄 Download My Resume</a>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>IT Intern</strong> @ Ameritas – Endpoint Services</li>
+        <li><strong>IT Technician</strong> @ AppleRX – Diagnostics, repair, peer training</li>
+      
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Game Engine Labs:</strong> Gameplay systems using Unity-like engines</li>
+        <li><strong>Web Game Dev:</strong> Interactive games with HTML/JS</li>
+        <li><strong>Android App:</strong> Mobile tool with custom logic/UI</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, C++, C#, SQL, HTML/CSS/JS</li>
+        <li>Unity, Git, MySQL, Android Studio</li>
+        <li>System Analysis, UI/UX, Game Programming</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <p>
+        📧 <a href="mailto:Anthonykhoathan@gmail.com">Anthonykhoathan@gmail.com</a><br>
+        📞 (859) 620-7955<br>
+        🔗 <a href="https://www.linkedin.com/in/anthonykthan/" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anthony Than. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
